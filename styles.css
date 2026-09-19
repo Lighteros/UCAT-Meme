@@ -439,6 +439,55 @@ h1 span:last-child {
   color: var(--ink-soft);
 }
 
+.ca-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: min(100%, 540px);
+  margin-top: 18px;
+  padding: 10px 12px;
+  border: var(--line);
+  border-radius: 14px;
+  background: var(--white);
+  box-shadow: 4px 4px 0 var(--ink);
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.ca-bar span {
+  flex: none;
+  padding: 4px 8px;
+  border: 2.5px solid var(--ink);
+  border-radius: 999px;
+  background: var(--gold);
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.ca-bar code {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.ca-bar em {
+  flex: none;
+  font-style: normal;
+  font-weight: 800;
+  color: var(--orange-deep);
+}
+
+.ca-bar:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--ink);
+}
+
 .hero-cta {
   display: flex;
   flex-wrap: wrap;

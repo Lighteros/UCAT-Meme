@@ -5,3 +5,7 @@ node_modules
 *.log
 verify.mjs
 verify-shots/
+push-repo.ps1
+
+.vercel
+.env*
