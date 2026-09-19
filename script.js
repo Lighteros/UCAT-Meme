@@ -122,21 +122,4 @@
     { threshold: 0.16 }
   );
   document.querySelectorAll(".rise").forEach((node) => observer.observe(node));
-
-  const caBtn = document.getElementById("ca-copy");
-  const caStatus = document.getElementById("ca-status");
-  if (caBtn && caStatus) {
-    caBtn.addEventListener("click", async () => {
-      const ca = caBtn.dataset.ca || "";
-      try {
-        await navigator.clipboard.writeText(ca);
-        caStatus.textContent = "Copied";
-      } catch {
-        caStatus.textContent = "Select";
-      }
-      window.setTimeout(() => {
-        caStatus.textContent = "Copy";
-      }, 1600);
-    });
-  }
 })();
